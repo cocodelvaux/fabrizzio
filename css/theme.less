@@ -1,24 +1,32 @@
 body {
-    padding-top: 70px;
     background: url("../img/flou.jpg") no-repeat;
+    background-attachment: fixed;
 }
 
-.table{
-	display: inline-block;
-	max-width: 50%;
-	float: left;
-	margin-top: 20px;
+.table {
+    display: inline-block;
+    max-width: 50%;
+    float: left;
+    margin-top: 20px;
 
 }
-.logo{
-	margin: 0 auto;
-	width: 330px;
+.logo {
+    margin: 0 auto 20px auto;
+    width: 330px;
 }
-.panel-body p{
 
-	max-width: 50%;
-	float: left;
-	padding: 25px 0 0 40px;
+.panel-body p {
+
+    max-width: 50%;
+    float: left;
+    padding: 25px 0 0 40px;
+}
+
+@media (min-width: @screen-sm-min) {
+
+    .navbar.navbar-default {
+        margin-top: 20px;
+    }
 }
 .slide{
 	max-width: 50%;
@@ -35,4 +43,12 @@ body {
 }
 footer{
 	color: white;
+}
+
+.navbar.navbar-default, .panel-default, .breadcrumb {
+    .box-shadow(3px 3px 3px rgba(0,0,0,.15));
+}
+
+.panel .panel, .panel .breadcrumb {
+    .box-shadow(none);
 }
