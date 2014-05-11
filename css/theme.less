@@ -24,16 +24,13 @@ body {
     margin-top: 20px;
 
 }
-img.logo {
+
+.logo {
 	display: block;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     width: 300px;
+    max-width: 100%;
     padding: 0;
-}
-
-.panel-body p {
-
-    padding: 25px 20px 0 10px;
 }
 
 @media (min-width: @screen-sm-min) {
@@ -51,24 +48,82 @@ img.logo {
     }
 }
 
-.slide{
-	display: inline-block;
-	margin: 20px 0 20px 0;
-
-}
-.slide+p{
-
-	padding: 25px 0 0 40px;
-
-}
-footer{
+.footer{
 	color: white;
 }
 
-.navbar.navbar-default, .panel-default, .breadcrumb {
-    .box-shadow(3px 3px 3px rgba(0,0,0,.15));
+.container {
+    > .navbar.navbar-default,
+    > .panel-default,
+    > .breadcrumb,
+    > .alert
+    > .footer {
+        .box-shadow(3px 3px 3px rgba(0,0,0,.15));
+    }
 }
 
-.panel .panel, .panel .breadcrumb {
-    .box-shadow(none);
+.panel-default {
+    > .panel-heading {
+        #gradient > .vertical(rgba(0,0,0,0); rgba(0,0,0,0.1));
+        border: none;
+        font-weight: bold;
+        font-size: @font-size-h3;
+    }
+    > .panel-footer {
+        #gradient > .vertical(rgba(0,0,0,0.1); rgba(0,0,0,0));
+        border: none;
+    }
 }
+
+.margin {
+    &-none { margin: 0 0 0 0 }
+    &-md { margin: 15px 15px 15px 15px }
+    &-sm { margin: 10px 10px 10px 10px}
+    &-top {
+        &-none { margin-top: 0 }
+        &-md { margin-top: 15px }
+        &-sm { margin-top: 10px }
+    }
+    &-right {
+        &-none { margin-right: 0 }
+        &-md { margin-right: 15px }
+        &-sm { margin-right: 10px }
+    }
+    &-bottom {
+        &-none { margin-bottom: 0 }
+        &-md { margin-bottom: 15px }
+        &-sm { margin-bottom: 10px }
+    }
+    &-left {
+        &-none { margin-left: 0 }
+        &-md { margin-left: 15px }
+        &-sm { margin-left: 10px }
+    }
+}
+
+.padding {
+    &-none { padding: 0 0 0 0 }
+    &-md { padding: 15px 15px 15px 15px }
+    &-sm { padding: 10px 10px 10px 10px}
+    &-top {
+        &-none { padding-top: 0 }
+        &-md { padding-top: 15px }
+        &-sm { padding-top: 10px }
+    }
+    &-right {
+        &-none { padding-right: 0 }
+        &-md { padding-right: 15px }
+        &-sm { padding-right: 10px }
+    }
+    &-bottom {
+        &-none { padding-bottom: 0 }
+        &-md { padding-bottom: 15px }
+        &-sm { padding-bottom: 10px }
+    }
+    &-left {
+        &-none { padding-left: 0 }
+        &-md { padding-left: 15px }
+        &-sm { padding-left: 10px }
+    }
+}
+

@@ -21,34 +21,27 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Accueil</a></li>
-                    <li><a href="#">Le restaurant</a></li>
-                    <li><a href="#">à la carte</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="<?php $this->path(); ?>"><i class="glyphicon glyphicon-home"></i> Accueil</a></li>
+                    <li><a href="<?php $this->path('leresto'); ?>"><i class="glyphicon glyphicon-cutlery"></i> Le restaurant</a></li>
+                    <li><a href="<?php $this->path('lacarta'); ?>"><i class="glyphicon glyphicon-book"></i> &Agrave; la carte</a></li>
+                    <li><a href="<?php $this->path('contact'); ?>"><i class="glyphicon glyphicon-earphone"></i> contact</a></li>
                 </ul>
             </div>
         </div>
 
         <img src="img/logowhite.png" class="logo" alt="logo fabrizzio">
 
-        <div class="panel panel-default">
-            <div class="panel-body">
-            <h1>Bienvenue dans notre pizzeria de Chastre</h1>
-                <div class="row">
-                    <div class="col-sm-6"><img src="img/table.jpg" class="table" alt="photo du restaurant"></div>
-                    <div class="col-sm-6"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, incidunt, repudiandae laudantium consectetur animi eum veritatis unde ad molestias cum. Unde, ipsum vero rerum dolor doloremque natus voluptas sint odit.</p></div>
-                </div>
-            </div>
+        <?php echo $content; ?>
 
-        </div>
-        <footer>
+        <div  class="footer">
 
             <p>adresse phone</p>
 
-        </footer>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+
