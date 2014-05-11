@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil / Pizzeria Fabrizzio</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="<?php $this->path('css/bootstrap.css'); ?>" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container wrap">
         <div class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,14 +29,16 @@
             </div>
         </div>
 
-        <img src="img/logowhite.png" class="logo" alt="logo fabrizzio">
+        <img src="<?php $this->path('img/logowhite.png'); ?>" class="logo" alt="logo fabrizzio">
 
         <?php echo $content; ?>
 
-        <div  class="footer">
-
-            <p>adresse phone</p>
-
+    </div>
+    <div  class="footer text-center">
+        <div class="container">
+            <i class="glyphicon glyphicon-time"></i> Ouvert tous les jours de 18h &agrave; 22h &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
+            <i class="glyphicon glyphicon-earphone"></i> 010 / 65 60 78 &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
+            <i class="glyphicon glyphicon-map-marker"></i> Route Provinciale 15 - 1450 Blanmont
         </div>
     </div>
 

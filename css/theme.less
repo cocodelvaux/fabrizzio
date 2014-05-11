@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+
 body {
     background: url("../img/flou.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -6,31 +10,28 @@ body {
     background-size: cover;
 }
 
-
-.background-cover {
-    /** position: fixed; **/
-    width: 100%;
-    height: 100%;
-    display: block;
-    top: 0;
-    left: 0;
-    background: url("../img/flou.jpg") 50% 50% no-repeat;
-    background-size: cover;
-}
-
-
-.table {
-    display: inline-block;
-    margin-top: 20px;
-
-}
-
 .logo {
 	display: block;
     margin: 0 auto 30px auto;
     width: 300px;
     max-width: 100%;
     padding: 0;
+}
+
+.wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -50px;
+	padding-bottom: 50px;
+}
+
+.footer {
+	min-height: 50px;
+    padding: 5px 0 5px 0;
+	color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 @media (min-width: @screen-sm-min) {
@@ -43,22 +44,17 @@ body {
 @media (max-width: @screen-sm-min) {
 
     .navbar.navbar-default {
-        margin-left: -20px;
-        margin-right: -20px;
+        margin-left: -15px;
+        margin-right: -15px;
     }
-}
-
-.footer{
-	color: white;
 }
 
 .container {
     > .navbar.navbar-default,
     > .panel-default,
     > .breadcrumb,
-    > .alert
-    > .footer {
-        .box-shadow(3px 3px 3px rgba(0,0,0,.15));
+    > .alert {
+        .box-shadow(3px 3px 3px rgba(0,0,0,.2));
     }
 }
 
