@@ -24,7 +24,7 @@
                     <li><a href="<?php $this->path(); ?>"><i class="glyphicon glyphicon-home"></i> Accueil</a></li>
                     <li><a href="<?php $this->path('leresto'); ?>"><i class="glyphicon glyphicon-cutlery"></i> Le restaurant</a></li>
                     <li><a href="<?php $this->path('lacarta'); ?>"><i class="glyphicon glyphicon-book"></i> &Agrave; la carte</a></li>
-                    <li><a href="<?php $this->path('contact'); ?>"><i class="glyphicon glyphicon-earphone"></i> contact</a></li>
+                    <li><a href="<?php $this->path('contact'); ?>"><i class="glyphicon glyphicon-earphone"></i> Contactez-Nous</a></li>
                 </ul>
             </div>
         </div>
@@ -42,8 +42,9 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/fabrizio.js"></script>
 </body>
 </html>
 

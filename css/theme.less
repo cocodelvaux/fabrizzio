@@ -34,10 +34,33 @@ body {
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
+.navbar.navbar-default ul.nav.navbar-nav li {
+    font-weight: bold;
+}
+
+.arrow-down {
+	position: absolute;
+    top: @navbar-height - 1;
+    left: 50%;
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+
 @media (min-width: @screen-sm-min) {
 
     .navbar.navbar-default {
         margin-top: 20px;
+        ul.nav.navbar-nav {
+            width: 100%;
+            li {
+                width: 25%;
+                text-align: center;
+                //font-weight: bold;
+            }
+        }
     }
 }
 
@@ -63,7 +86,7 @@ body {
         #gradient > .vertical(rgba(0,0,0,0); rgba(0,0,0,0.1));
         border: none;
         font-weight: bold;
-        font-size: @font-size-h3;
+        font-size: @font-size-h4;
     }
     > .panel-footer {
         #gradient > .vertical(rgba(0,0,0,0.1); rgba(0,0,0,0));
