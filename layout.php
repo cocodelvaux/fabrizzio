@@ -23,13 +23,13 @@
                 <ul class="nav navbar-nav">
                     <li><a href="<?php $this->path(); ?>"><i class="glyphicon glyphicon-home"></i> Accueil</a></li>
                     <li><a href="<?php $this->path('leresto'); ?>"><i class="glyphicon glyphicon-cutlery"></i> Le restaurant</a></li>
-                    <li><a href="<?php $this->path('lacarta'); ?>"><i class="glyphicon glyphicon-book"></i> &Agrave; la carte</a></li>
+                    <li><a href="<?php $this->path('lacarte'); ?>"><i class="glyphicon glyphicon-book"></i> &Agrave; la carte</a></li>
                     <li><a href="<?php $this->path('contact'); ?>"><i class="glyphicon glyphicon-earphone"></i> Contactez-Nous</a></li>
                 </ul>
             </div>
         </div>
 
-        <img src="<?php $this->path('img/logowhite.png'); ?>" class="logo" alt="logo fabrizzio">
+        <img src="<?php $this->path('img/logowhite.png'); ?>" class="logo" alt="Pizzeria fabrizio">
 
         <?php echo $content; ?>
 

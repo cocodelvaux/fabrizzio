@@ -42,4 +42,9 @@ class FrontController
     {
         echo str_replace('/index.php', '', $_SERVER['PHP_SELF']) . "/" . $path;
     }
+
+    public function html($variable)
+    {
+        echo htmlentities($variable);
+    }
 }
