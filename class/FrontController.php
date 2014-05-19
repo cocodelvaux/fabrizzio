@@ -1,14 +1,18 @@
 <?php
 
 /**
- * @brief This file contents all of basic functions
+ * @brief This file contents all of basic methods
  * @author Jorge Solis Pauwels <jorgeluissolis@gmail.com>
  */
 class FrontController
 {
-    public function __construct()
+    private $config;
+    private $variables;
+
+    public function __construct($config)
     {
-        $content = $this->getPageContent($this->getUrl());
+        $this->config = $config;
+        $this->set('content', $this->getPageContent($this->getUrl()));
         require("layout.php");
     }
 
@@ -22,11 +26,11 @@ class FrontController
             require($url);
 
             return ob_get_clean();
-        } elseif($page != 'error') {
+        } elseif($page !== 'error') {
             return $this->getPageContent('error');
         }
 
-        return "";
+        return '';
     }
 
     public function getUrl()
@@ -35,16 +39,32 @@ class FrontController
             return $_GET['url'];
         }
 
-        return "index";
+        return 'index';
     }
 
-    public function path($path = "")
+    public function path($path = '')
     {
-        echo str_replace('/index.php', '', $_SERVER['PHP_SELF']) . "/" . $path;
+        return str_replace('/index.php', '', $_SERVER['PHP_SELF']) . '/' . $path;
     }
 
-    public function html($variable)
+    public function set($key, $value)
     {
-        echo htmlentities($variable);
+        $this->variables[$key] = $value;
+    }
+
+    public function add($key, $value)
+    {
+        $this->variables[$key] = $this->get($key) . $value;
+    }
+
+    public function get($key, $default = null)
+    {
+        if (isset($this->variables[$key])) {
+            return $this->variables[$key];
+        } else if ($default) {
+            return $default;
+        }
+
+        return '';
     }
 }

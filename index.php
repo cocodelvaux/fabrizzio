@@ -2,7 +2,7 @@
 session_start();
 
 require("config.php");
-require($config['path']."class/FrontController.php");
+require("/class/FrontController.php");
 
 new FrontController($config);
 

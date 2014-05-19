@@ -5,7 +5,7 @@
                 Contactez-Nous
             </div>
             <div class="panel-body">
-                <center><img src="<?php $this->path('img/logo.png'); ?>" width="154" class="img-responsive" alt="Pizzeira fabrizio"></center>
+                <center><img src="<?php echo $this->path('img/logo.png'); ?>" width="154" class="img-responsive" alt="Pizzeira fabrizio"></center>
             </div>
                 <ul class="list-group">
                     <li class="list-group-item">

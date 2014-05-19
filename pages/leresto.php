@@ -15,15 +15,15 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="img/1.jpg" alt="photo restaurant">
+                        <img src="<?php echo $this->path('img/1.jpg'); ?>" alt="photo restaurant">
                             <div class="carousel-caption"></div>
                         </div>
                         <div class="item">
-                            <img src="img/2.jpg" alt="photo restaurant">
+                            <img src="<?php echo $this->path('img/2.jpg'); ?>" alt="photo restaurant">
                             <div class="carousel-caption"></div>
                         </div>
                         <div class="item">
-                            <img src="img/3.jpg" alt="photo restaurant">
+                            <img src="<?php echo $this->path('img/3.jpg'); ?>" alt="photo restaurant">
                             <div class="carousel-caption"></div>
                         </div>
                     </div>

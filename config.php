@@ -4,7 +4,7 @@ $config = array(
 	"host"=>"localhost",
 	"user"=>"root",
 	"password"=>"",
-	"database"=>"fabrizzio",
+	"database"=>"fabrizio",
 	"path"=>"./",
-	"basepath"=>"/Fabrizzio"
+	"basepath"=>"/Fabrizio"
 );
