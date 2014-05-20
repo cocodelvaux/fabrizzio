@@ -1,3 +1,6 @@
+<?php
+    $this->set('title', 'Pizzeria Fabrizio - Le restaurant');
+?>
 <div class="panel panel-default">
     <div class="panel-heading">
         Le resto de chastre c'est trop cool!

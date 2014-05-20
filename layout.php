@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" id="header">
                 <ul class="nav navbar-nav">
                     <li><a href="<?php echo $this->path(); ?>"><i class="glyphicon glyphicon-home"></i> Accueil</a></li>
-                    <li><a href="<?php echo $this->path('leresto'); ?>"><i class="glyphicon glyphicon-cutlery"></i> Le restaurant</a></li>
                     <li><a href="<?php echo $this->path('lacarte'); ?>"><i class="glyphicon glyphicon-book"></i> &Agrave; la carte</a></li>
+                    <li><a href="<?php echo $this->path('leresto'); ?>"><i class="glyphicon glyphicon-cutlery"></i> Le restaurant</a></li>
                     <li><a href="<?php echo $this->path('contact'); ?>"><i class="glyphicon glyphicon-earphone"></i> Contactez-Nous</a></li>
                 </ul>
             </div>

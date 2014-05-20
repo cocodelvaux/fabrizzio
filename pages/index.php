@@ -1,3 +1,6 @@
+<?php
+    $this->set('title', 'Pizzeria Fabrizio - Accueil');
+?>
 <div class="panel panel-default">
     <div class="panel-heading">
         Bienvenue dans notre pizzeria de Chastre

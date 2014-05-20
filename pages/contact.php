@@ -1,3 +1,6 @@
+<?php
+    $this->set('title', 'Pizzeria Fabrizio - Contactez-Nous');
+?>
 <div class="row">
     <div class="col-sm-6">
         <div class="panel panel-default">
