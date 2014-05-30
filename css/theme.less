@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background: url("../img/flou.jpg") no-repeat center center fixed;
+    background: url("../img/flou9.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -38,18 +38,17 @@ body {
     font-weight: bold;
 }
 
-.arrow-down {
-	position: absolute;
-    top: @navbar-height - 1;
-    left: 50%;
-    width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-top: 10px solid #fff;
-}
-
 @media (min-width: @screen-sm-min) {
+    .arrow-down {
+        position: absolute;
+        top: @navbar-height - 1;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid @navbar-default-bg;
+    }
 
     .navbar.navbar-default {
         margin-top: 20px;
