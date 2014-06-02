@@ -3,12 +3,12 @@
 ?>
 <div class="panel panel-default">
     <div class="panel-heading">
-        Le resto de chastre c'est trop cool!
+        Découvrez quelques photos de notre pizzeria!
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-sm-6">
-                <div id="carousel-example-generic" class="carousel slide margin-bottom-md" data-ride="carousel">
+            <div class="col-sm-12">
+            <div id="carousel-example-generic" class="carousel slide margin-bottom-md" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -20,6 +20,7 @@
                         <div class="item active">
                         <img src="<?php echo $this->path('img/1.jpg'); ?>" alt="photo restaurant">
                             <div class="carousel-caption"></div>
+
                         </div>
                         <div class="item">
                             <img src="<?php echo $this->path('img/2.jpg'); ?>" alt="photo restaurant">
@@ -28,6 +29,7 @@
                         <div class="item">
                             <img src="<?php echo $this->path('img/3.jpg'); ?>" alt="photo restaurant">
                             <div class="carousel-caption"></div>
+
                         </div>
                     </div>
                     <!-- Controls -->
@@ -38,13 +40,14 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
                 </div>
+            
+            
             </div>
-            <div class="col-sm-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, dolorem, possimus modi accusamus numquam quo officiis sapiente fugit quia quidem aliquam maxime ad fugiat sunt quasi omnis est libero debitis!</p>
-            </div>
+            
         </div>
+
     </div>
     <div class="panel-footer">
-        Le resto de chastre c'est trop cool!
+
     </div>
 </div>
