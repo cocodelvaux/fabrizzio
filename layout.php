@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $this->get('title', 'Pizzeria Fabrizio'); ?></title>
     <link href="<?php echo $this->path('css/bootstrap.css'); ?>" rel="stylesheet">
+    <link href="<?php echo $this->path('css/font-awesome.min.css'); ?>" rel="stylesheet" >
     <?php echo $this->get('stylesheet'); ?>
 </head>
 <body>
