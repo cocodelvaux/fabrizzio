@@ -4,26 +4,26 @@
     $this->set('title', 'Pizzeria Fabrizio - La carte');
 ?>
 <div class="row">
-<div class="col-md-6">
-<div class="btn-group margin-bottom-md" data-toggle="buttons" style="width:100%">
-  <label class="btn btn-default active" style="width:30%">
-    <input type="radio" name="options" id="option1"> <i class="glyphicon glyphicon-align-justify"></i> Pizzas
-  </label>
-  <label class="btn btn-default" style="width:40%">
-    <input type="radio" name="options" id="option2"> <i class="glyphicon glyphicon-plus"></i> Suppl&eacute;ments
-  </label>
-  <label class="btn btn-default" style="width:30%">
-    <input type="radio" name="options" id="option3"> <i class="glyphicon glyphicon-glass"></i> Boissons
-  </label>
-</div>
-</div>
-<div class="col-md-6">
-<div class="input-group margin-bottom-md">
-    <input type="text" class="form-control" placeholder="Rechercher">
-    <div class="input-group-btn">
-        <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+    <div class="col-md-6">
+        <div class="btn-group margin-bottom-md" data-toggle="buttons" style="width:100%">
+            <label class="btn btn-default active" style="width:30%">
+                <input type="radio" name="options" id="option1"> <i class="glyphicon glyphicon-align-justify"></i> Pizzas
+            </label>
+            <label class="btn btn-default" style="width:40%">
+                <input type="radio" name="options" id="option2"> <i class="glyphicon glyphicon-plus"></i> Suppl&eacute;ments
+            </label>
+            <label class="btn btn-default" style="width:30%">
+                <input type="radio" name="options" id="option3"> <i class="glyphicon glyphicon-glass"></i> Boissons
+            </label>
+        </div>
     </div>
-</div>
+    <div class="col-md-6">
+        <div class="input-group margin-bottom-md">
+            <input type="text" class="form-control" placeholder="Rechercher">
+            <div class="input-group-btn">
+            <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+    </div>
 </div>
 
 </div>

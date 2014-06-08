@@ -8,7 +8,9 @@
                 Contactez-Nous
             </div>
             <div class="panel-body">
-                <center><img src="<?php echo $this->path('img/logo.png'); ?>" width="154" class="img-responsive" alt="Pizzeira fabrizio"></center>
+                <a href="<?php echo $this->path('leresto'); ?>">
+                    <img src="<?php echo $this->path('img/resto/2.jpg'); ?>" width="250" class="img-responsive center-block" alt="Pizzeira fabrizio">
+                </a>
             </div>
                 <ul class="list-group">
                     <li class="list-group-item">

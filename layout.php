@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $this->get('title', 'Pizzeria Fabrizio'); ?></title>
+    <link rel="icon" href="<?php echo $this->path('img/favicon.ico'); ?>" />
     <link href="<?php echo $this->path('css/bootstrap.css'); ?>" rel="stylesheet">
     <link href="<?php echo $this->path('css/font-awesome.min.css'); ?>" rel="stylesheet" >
     <?php echo $this->get('stylesheet'); ?>
+    <?php echo $this->get('javascript-header'); ?>
 </head>
 <body>
     <div class="container wrap">
