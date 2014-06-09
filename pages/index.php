@@ -30,7 +30,7 @@
                 <div class="visible-xs"><a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586?fref=ts" class="btn btn-primary">Rejoignez notre page facebook</a></div>
             </div>
             <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/resto1.png'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
+                <img src="<?php echo $this->path('img/resto.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
                 <p>Venez découvrir notre restaurant à travers nos photos</p>
                 <div class="visible-xs"><a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary">Voir la galerie de photos</a></div>
             </div>
