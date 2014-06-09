@@ -12,13 +12,13 @@
                 <div id="carousel" class="carousel slide margin-bottom-md" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators hidden-xs">
-                        <?php for($i = 0; $i < 19; $i++) { ?>
+                        <?php for($i = 0; $i < 16; $i++) { ?>
                             <li data-target="#carousel" data-slide-to="<?php echo $i; ?>"<?php echo $i === 0 ? ' class="active"' : ''; ?>></li>
                         <?php } ?>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <?php for($i = 1; $i <= 19; $i++) { ?>
+                        <?php for($i = 1; $i <= 16; $i++) { ?>
                             <div class="item<?php echo $i === 1 ? ' active' : '' ; ?>">
                                 <img src="<?php echo $this->path('img/resto/'. $i .'.jpg'); ?>" alt="photo restaurant">
                                 <div class="carousel-caption"></div>
