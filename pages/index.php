@@ -1,55 +1,1 @@
-<?php
-    $this->set('title', 'Pizzeria Fabrizio - Accueil');
-?>
-<div class="panel panel-default">
-    <div class="panel-heading">
-        Bienvenue dans notre pizzeria de Chastre
-    </div>
-    <div class="panel-body">
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="<?php echo $this->path('img/table.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
-            </div>
-            <div class="col-sm-6">
-                <h4><strong>Notre pizzeria de Chastre,</strong> situ&eacute;e dans un cadre verdoyant, &agrave; <strong>5 minutes de Louvain-la neuve</strong> vous accueille dans un cadre familial et chaleureux tous les soirs de la semaine.</h4>
-                <br>
-                <center><a href="<?php echo $this->path('contact'); ?>" class="btn btn-primary btn-lg"><i class="fa fa-map-marker"></i> Voir la carte d'acc&egrave;s</a></center>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h4>Venez d&eacute;couvrir le go&ucirc;t de nos pizzas pr&eacute;par&eacute;es avec des <strong>ingr&eacute;dients de qualit&eacute;</strong> qui font l'authenticit&eacute; de la pizzeria Fabrizio.</h4>
-                <br>
-                <center><a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary btn-lg"><i class="fa fa-book"></i> Decouvrez nos pizzas</a></center>
-            </div>
-            <div class="col-sm-6">
-                <img src="<?php echo $this->path('img/pizza.png'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="<?php echo $this->path('img/resto.png'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
-            </div>
-            <div class="col-sm-6">
-                <h4><strong>Mangez sur place</strong> et laissez vous emporter par les photos qui ornent notre restaurant et voyagez &agrave; travers les diff&eacute;rentes villes comme Rome, Venise ou encore Naples.
-                    Profitez &eacute;galement de <strong>notre terrasse</strong> qui se situe au calme dans le joli jardin de notre pizzeria.
-                </h4>
-                <br>
-                <center><a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary btn-lg"><i class="fa fa-picture-o"></i> Explorez photos de notre restaurant</a></center>
-            </div>
-        </div>
-    </div>
-    <div class="panel-footer">
-        Les pizzas sont aussi &agrave; <strong>emporter</strong> mais nous ne disposons pas d'un syst&eacute;me de livraison.
-    </div>
-</div>
+<?php    $this->set('title', 'Pizzeria Fabrizio - Accueil');?><div class="panel panel-default">    <div class="panel-heading">        Bienvenue dans notre pizzeria de Chastre    </div>    <div class="panel-body">        <div class="row">            <div class="col-sm-6">                <img src="<?php echo $this->path('img/table.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">            </div>            <div class="col-sm-6">                <h4><strong>Notre pizzeria de Chastre,</strong> situ&eacute;e dans un cadre verdoyant, &agrave; <strong>5 minutes de Louvain-la neuve</strong> vous accueille dans un cadre familial et chaleureux tous les soirs de la semaine.</h4>                <br>                <h4>Venez d&eacute;couvrir le go&ucirc;t de nos pizzas pr&eacute;par&eacute;es avec des <strong>ingr&eacute;dients de qualit&eacute;</strong> qui font l'authenticit&eacute; de la pizzeria Fabrizio.</h4>                <br>                <h4><strong>Mangez sur place</strong> et laissez vous emporter par les photos qui ornent notre restaurant et voyagez &agrave; travers les diff&eacute;rentes villes comme Rome, Venise ou encore Naples.                    Profitez &eacute;galement de <strong>notre terrasse</strong> qui se situe au calme dans le joli jardin de notre pizzeria.                </h4>                <br>            </div>        </div>        <div class="row">            <div class="col-sm-12">                <hr>            </div>        </div>        <div class="row">            <div class="col-sm-4 titre">            <img src="<?php echo $this->path('img/pizza.png'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">            <h3>Notre carte propose un large panel de pizza, il y a en pour tous les goûts!</h3>            </div>            <div class="col-sm-4 titre">                <img src="<?php echo $this->path('img/fabrizio.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">                <h3>Pour suivre nos actualités venez visitez notre page Facebook! vous pourrez également y laisser vos commentaires</h3>            </div>            <div class="col-sm-4 titre">                <img src="<?php echo $this->path('img/resto1.png'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">                <h3>Venez découvrir notre restaurant à travers nos photos</h3>            </div>        </div>        <div class="row">            <div class="col-sm-4 mini">            <a href="<?php echo $this->path('lacarte'); ?>"><button type="button" class="btn btn-primary btn-lg">Découvrez notre carte</button></a>            </div>             <div class="col-sm-4 mini">            <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586?fref=ts"><button type="button" class="btn btn-primary btn-lg">Rejoignez notre page facebook</button></a>            </div>             <div class="col-sm-4 mini">            <a href="<?php echo $this->path('leresto'); ?>"><button type="button" class="btn btn-primary btn-lg">Voir la galerie de photos</button></a>            </div>        </div>        <div class="row">            <div class="col-sm-12">            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5062.63092294148!2d4.646408!3d50.62125629999991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17f18859dd615%3A0xe3638981695c830a!2sRoute+Provinciale+15!5e0!3m2!1sfr!2s!4v1402305731432" width="1100" height="300" frameborder="0" style="border:0"></iframe>                            </div>                    </div>    </div>    <div class="panel-footer">        Les pizzas sont aussi &agrave; <strong>emporter</strong> mais nous ne disposons pas d'un syst&eacute;me de livraison.    </div></div>
