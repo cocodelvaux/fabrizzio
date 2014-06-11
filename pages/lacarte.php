@@ -38,15 +38,13 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <?php echo htmlentities($name); ?>
-
                 </div>
                 <div class="panel-body" style='min-height:90px'>
                     <i><?php echo htmlentities($pizza['ingredients']); ?></i>
-
                 </div>
                 <div class="panel-footer text-right">
-                    <span class="label label-success"><?php echo htmlentities($pizza['price']); ?> &euro;</span>
-                    <span class="label label-primary"><?php echo htmlentities($pizza['price']); ?> &euro;</span>
+                    <span class="label label-success"><?php echo number_format(($pizza['price'] - 1), 2, ',', ''); ?> &euro;</span>
+                    <span class="label label-primary"><?php echo number_format($pizza['price'], 2, ',', ''); ?> &euro;</span>
                 </div>
             </div>
         </div>
