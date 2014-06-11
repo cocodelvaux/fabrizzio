@@ -19,50 +19,57 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/pizza.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
+            <div class="col-sm-4 col-xs-12 margin-bottom-md milieu">
+                <img src="<?php echo $this->path('img/pizza.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm pizza" alt="photo du restaurant">
                 <p>Notre carte propose un large panel de pizzas, il y a en pour tous les go&ucirc;ts!</p>
-                <div class="visible-xs">
-                    <a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary">
+                <div class="col-sm-4 col-xs-12 visible-xs grandbtn">
+            <a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary btn-lg lien">
                         <i class="glyphicon glyphicon-cutlery"></i> D&eacute;couvrez notre carte
                     </a>
-                </div>
+                
             </div>
-            <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/fabrizio.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
+
+                
+            </div>
+            <div class="col-sm-4 col-xs-12 margin-bottom-md milieu">
+                <img src="<?php echo $this->path('img/fabrizio.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm pizza" alt="photo du restaurant">
                 <p>Pour suivre nos actualit&eacute;s venez visiter notre page Facebook! vous pourrez &eacute;galement y laisser vos commentaires</p>
-                <div class="visible-xs">
-                    <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586?fref=ts" target="_blank" class="btn btn-primary">
+                <div class="col-sm-4 col-xs-12 visible-xs grandbtn">
+                    <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586?fref=ts" target="_blank" class="btn btn-primary btn-lg lien">
                         <i class="fa fa-facebook-square"></i> Rejoignez-nous sur facebook
                     </a>
                 </div>
+                   
             </div>
-            <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/resto.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="photo du restaurant">
+            <div class="col-sm-4 col-xs-12 margin-bottom-md milieu">
+                <img src="<?php echo $this->path('img/resto.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm image pizza" alt="photo du restaurant">
                 <p>Venez d&eacute;couvrir notre restaurant &agrave; travers nos photos</p>
-                <div class="visible-xs">
-                    <a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary">
+                <div class="col-sm-4 col-xs-12 visible-xs grandbtn">
+                    <a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary btn-lg lien">
                         <i class="fa fa-picture-o"></i> Voir la galerie de photos
                     </a>
                 </div>
+                   
             </div>
         </div>
-        <div class="row margin-bottom-md hidden-xs">
-            <div class="col-sm-4">
-                <a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary">
-                    <i class="glyphicon glyphicon-cutlery"></i> D&eacute;couvrez notre carte
-                </a>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs milieu">
+            <a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary lien">
+                        <i class="glyphicon glyphicon-cutlery"></i> D&eacute;couvrez notre carte
+                    </a>
+                
             </div>
-            <div class="col-sm-4">
-                <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586?fref=ts" target="_blank" class="btn btn-primary">
-                    <i class="fa fa-facebook-square"></i> Rejoignez-nous sur facebook
-                </a>
+            <div class="col-sm-4 hidden-xs milieu">
+                 <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586?fref=ts" target="_blank" class="btn btn-primary lien">
+                        <i class="fa fa-facebook-square"></i> Rejoignez-nous sur facebook
+                    </a>
             </div>
-            <div class="col-sm-4">
-                <a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary">
-                    <i class="fa fa-picture-o"></i> Voir la galerie de photos
-                </a>
+            <div class="col-sm-4 hidden-xs milieu">
+                 <a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary lien">
+                        <i class="fa fa-picture-o"></i> Voir la galerie de photos
+                    </a>
             </div>
+            
         </div>
         <hr>
         <div class="row margin-top-md">
