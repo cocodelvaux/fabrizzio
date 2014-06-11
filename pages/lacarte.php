@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-            <?php if (($i + 1) % 3 === 0) { ?>
+            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($pizzas)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>
@@ -78,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-            <?php if (($i + 1) % 3 === 0) { ?>
+            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($supplements)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </div>
-            <?php if (($i + 1) % 3 === 0) { ?>
+            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($boissons)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>
