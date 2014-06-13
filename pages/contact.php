@@ -23,7 +23,7 @@
                         <span class="badge"><i class="glyphicon glyphicon-map-marker"></i></span> Route Provinciale 15 - 1450 Blanmont
                     </li>
                     <li class="list-group-item">
-                        <span class="badge"><i class="glyphicon glyphicon-envelope"></i></span> info@pizzachastre.be
+                        <span class="badge"><i class="glyphicon glyphicon-envelope"></i></span> info@chastrepizza.be
                     </li>
                 </ul>
         </div>

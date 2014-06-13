@@ -1,5 +1,17 @@
 <?php
     require('data.php');
+    $this->add(
+        'stylesheet',
+        '<style>
+            body {
+                background: #fff url("' .  $this->path('img/lacarte.jpg') . '") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>'
+    );
     $this->add('javascript', '<script src="' . $this->path('js/lacarte.js') . '"></script>');
     $this->set('title', 'Pizzeria Fabrizio - La carte');
 ?>

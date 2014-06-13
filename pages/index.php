@@ -20,30 +20,36 @@
         <hr>
         <div class="row">
             <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/pizza.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="D&eacute;couvrez notre carte">
+                <a href="<?php echo $this->path('lacarte'); ?>">
+                    <img src="<?php echo $this->path('img/pizza.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="D&eacute;couvrez notre carte">
+                </a>
                 <p>Notre carte propose un large panel de pizzas, il y a en pour tous les go&ucirc;ts!</p>
                 <div class="visible-xs clearfix margin-bottom-lg margin-top-lg">
-                    <a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary btn-lg margin-bottom-lg col-xs-12">
+                    <a href="<?php echo $this->path('lacarte'); ?>" class="btn btn-primary margin-bottom-lg col-xs-12">
                         <i class="glyphicon glyphicon-cutlery"></i> D&eacute;couvrez notre carte
                     </a>
                 </div>
                 <hr class="visible-xs">
             </div>
             <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/fabrizio.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="Pizzeria fabrizio facebook">
+                <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586" target="_blank">
+                    <img src="<?php echo $this->path('img/fabrizio.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="Pizzeria fabrizio facebook">
+                </a>
                 <p>Pour suivre nos actualit&eacute;s venez visiter notre page Facebook! vous pourrez &eacute;galement y laisser vos commentaires</p>
                 <div class="visible-xs clearfix margin-bottom-lg margin-top-lg">
-                    <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586" target="_blank" class="btn btn-primary btn-lg margin-bottom-lg col-xs-12">
+                    <a href="https://www.facebook.com/pages/Pizzeria-Fabrizio/304604589650586" target="_blank" class="btn btn-primary margin-bottom-lg col-xs-12">
                         <i class="fa fa-facebook-square"></i> Rejoignez-nous sur facebook
                     </a>
                 </div>
                 <hr class="visible-xs">
             </div>
             <div class="col-sm-4 margin-bottom-md">
-                <img src="<?php echo $this->path('img/resto.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="D&eacute;couvrir notre restaurant">
+                <a href="<?php echo $this->path('leresto'); ?>">
+                    <img src="<?php echo $this->path('img/resto.jpg'); ?>" class="img-responsive img-thumbnail margin-bottom-sm" alt="D&eacute;couvrir notre restaurant">
+                </a>
                 <p>Venez d&eacute;couvrir notre restaurant &agrave; travers nos photos</p>
                 <div class="visible-xs clearfixmargin-top-lg">
-                    <a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary btn-lg margin-bottom-lg col-xs-12">
+                    <a href="<?php echo $this->path('leresto'); ?>" class="btn btn-primary margin-bottom-lg col-xs-12">
                         <i class="fa fa-picture-o"></i> Voir la galerie de photos
                     </a>
                 </div>

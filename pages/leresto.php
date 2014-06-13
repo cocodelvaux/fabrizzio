@@ -1,5 +1,17 @@
 <?php
     $this->set('title', 'Pizzeria Fabrizio - Le restaurant');
+    $this->add(
+        'stylesheet',
+        '<style>
+            body {
+                background: #fff url("' .  $this->path('img/leresto.jpg') . '") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>'
+    );
     $this->add('javascript-header', '<script src="' . $this->path('js/fullscreen.js') . '"></script>');
 ?>
 <div class="panel panel-default">
@@ -12,13 +24,13 @@
                 <div id="carousel" class="carousel slide margin-bottom-md" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators hidden-xs">
-                        <?php for($i = 0; $i < 16; $i++) { ?>
+                        <?php for($i = 0; $i < 15; $i++) { ?>
                             <li data-target="#carousel" data-slide-to="<?php echo $i; ?>"<?php echo $i === 0 ? ' class="active"' : ''; ?>></li>
                         <?php } ?>
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <?php for($i = 1; $i <= 16; $i++) { ?>
+                        <?php for($i = 1; $i <= 15; $i++) { ?>
                             <div class="item<?php echo $i === 1 ? ' active' : '' ; ?>">
                                 <img src="<?php echo $this->path('img/resto/'. $i .'.jpg'); ?>" alt="photo restaurant">
                                 <div class="carousel-caption"></div>
