@@ -7,11 +7,13 @@
 class FrontController
 {
     private $config;
+    private $email;
     private $variables;
 
     public function __construct($config)
     {
         $this->config = $config;
+        $this->email = new Email();
         $this->set('content', $this->getPageContent($this->getUrl()));
         require("layout.php");
     }

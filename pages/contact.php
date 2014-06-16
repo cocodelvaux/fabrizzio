@@ -12,6 +12,20 @@
             }
         </style>'
     );
+
+    if (isset($_POST['name']) and $_POST['name'] !== '' and
+        isset($_POST['email']) and $_POST['email'] !== '' and
+        isset($_POST['message']) and $_POST['message'] !== '' and
+        //isset($_SERVER['HTTP_REFERER']) and $_SERVER['HTTP_REFERER'] === "http://chastrepizza.be/contact" and
+        filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)
+    ) {
+        $form = $_POST['name'] . ' <' . $_POST['email'] . ">";
+        $to = 'Jorge Solis pauwels <jorgeluissolis@gmail.com>';
+        $subject = $_POST['name'] . ' - www.chastrepizza.be';
+        $message = 'Email envoyée depuis www.chastrepizza.be' . $_POST['message'];
+
+        var_dump($this->email->send($from, $to, $subject, $message));
+    }
 ?>
 <div class="row">
     <div class="col-sm-6">
@@ -55,20 +69,22 @@
     <div class="panel-heading">
        Envoyez-nous un mail
     </div>
-    <div class="panel-body">
-        <div class="input-group margin-bottom-md">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input type="text" class="form-control" placeholder="Votre nom">
+    <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
+        <div class="panel-body">
+            <div class="input-group margin-bottom-md">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input name="name" type="text" class="form-control" placeholder="Votre nom">
+            </div>
+            <div class="input-group margin-bottom-md">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                <input name="email" type="text" class="form-control" placeholder="Votre email">
+            </div>
+            <textarea name="message" class="form-control" rows="5" placeholder="Message"></textarea>
         </div>
-        <div class="input-group margin-bottom-md">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-            <input type="text" class="form-control" placeholder="Votre email">
+        <div class="panel-footer text-right">
+            <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-ok"></i> Envoyer</button>
         </div>
-        <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-    </div>
-    <div class="panel-footer text-right">
-        <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-ok"></i> Envoyer</button>
-    </div>
+    </form>
 </div>
 
 
