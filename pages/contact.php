@@ -1,5 +1,17 @@
 <?php
     $this->set('title', 'Pizzeria Fabrizio - Contactez-Nous');
+    $this->add(
+        'stylesheet',
+        '<style>
+            body {
+                background: #fff url("' .  $this->path('img/contact.jpg') . '") no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+        </style>'
+    );
 ?>
 <div class="row">
     <div class="col-sm-6">
@@ -14,16 +26,16 @@
             </div>
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <span class="badge"><i class="glyphicon glyphicon-time"></i></span> Ouvert tous les jours de 18h &agrave; 22h
+                        <span class="label label-default"><i class="glyphicon glyphicon-time"></i></span> Ouvert tous les jours de 18h &agrave; 22h
                     </li>
                     <li class="list-group-item">
-                        <span class="badge"><i class="glyphicon glyphicon-earphone"></i></span> 010 / 65 60 78
+                        <span class="label label-default"><i class="glyphicon glyphicon-earphone"></i></span> 010/65.60.78 &nbsp;&nbsp;-&nbsp;&nbsp; 0497/39.33.97
                     </li>
                     <li class="list-group-item">
-                        <span class="badge"><i class="glyphicon glyphicon-map-marker"></i></span> Route Provinciale 15 - 1450 Blanmont
+                        <span class="label label-default"><i class="glyphicon glyphicon-map-marker"></i></span> Route Provinciale 15 - 1450 Chastre
                     </li>
                     <li class="list-group-item">
-                        <span class="badge"><i class="glyphicon glyphicon-envelope"></i></span> info@chastrepizza.be
+                        <span class="label label-default"><i class="glyphicon glyphicon-envelope"></i></span> info@chastrepizza.be
                     </li>
                 </ul>
         </div>

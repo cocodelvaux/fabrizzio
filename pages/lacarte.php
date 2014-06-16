@@ -30,10 +30,10 @@
         </div>
     </div>
     <div class="col-md-6">
-        <div class="input-group margin-bottom-md">
-            <input type="text" class="form-control" placeholder="Rechercher">
+        <div class="search input-group margin-bottom-md">
+            <input type="text" class="form-control" placeholder="Rechercher une pizza">
             <div class="input-group-btn">
-                <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                <button class="btn btn-default"><i class="fa fa-search"></i></button>
             </div>
         </div>
     </div>
@@ -56,7 +56,17 @@
                             <i><?php echo htmlentities($pizza['content']); ?></i>
                         </div>
                         <div class="panel-footer text-right">
-                            <span class="label label-success"><?php echo number_format(($pizza['price'] - 1), 2, ',', ''); ?> &euro;</span>
+                            <span class="label label-success">
+                                <?php
+                                    $discount = 1;
+
+                                    if (strpos($pizza['title'], 'Nutella') === 0) {
+                                        $discount = 0;
+                                    }
+
+                                    echo number_format(($pizza['price'] - $discount), 2, ',', ''); ?> &euro;
+                            </span>
+                            &nbsp;
                             <span class="label label-primary"><?php echo number_format($pizza['price'], 2, ',', ''); ?> &euro;</span>
                         </div>
                     </div>
@@ -72,17 +82,54 @@
             </div>
         </div>
     </div>
+    <div id="pizzas-search" class="hide">
+        <?php
+            $i = 0;
+            foreach ($pizzas as $pizza) {
+        ?>
+            <div class="panel panel-default pizza">
+                <div class="panel-heading">
+                    <?php echo htmlentities($pizza['title']); ?>
+                </div>
+                <div class="panel-body" style='min-height:70px'>
+                    <i><?php echo htmlentities($pizza['content']); ?></i>
+                </div>
+                <div class="panel-footer text-right">
+                    <span class="label label-success">
+                        <?php
+                            $discount = 1;
+                            if (strpos($pizza['title'], 'Nutella') === 0) {
+                                $discount = 0;
+                            }
+                            echo number_format(($pizza['price'] - $discount), 2, ',', ''); ?> &euro;
+                    </span>
+                    &nbsp;
+                    <span class="label label-primary"><?php echo number_format($pizza['price'], 2, ',', ''); ?> &euro;</span>
+                </div>
+            </div>
+        <?php $i++; } ?>
+        <div class="panel penel-default">
+            <div class="panel-body">
+                <button class="show-all btn btn-primary">Afficher tout les pizzas</button>
+                <div class="pull-right">
+                    <span class="label label-success">Prix &agrave; emporter</span>
+                    &nbsp;
+                    <span class="label label-primary">Prix &agrave; manger sur place</span>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="supplements" class="hide">
         <?php
             $i = 0;
             foreach ($supplements as $suplement) {
         ?>
-            <?php if ($i === 0 or $i % 3 === 0) { ?>
+            <?php if ($i === 0 or $i % 2 === 0) { ?>
                 <div class="row">
             <?php } ?>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-body" style='min-height:90px'>
+                        <div class="panel-body" style='min-height:100px'>
                             <i><?php echo htmlentities($suplement['content']); ?></i>
                         </div>
                         <div class="panel-footer text-right">
@@ -90,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($supplements)) { ?>
+            <?php if (($i + 1) % 2 === 0 or ($i + 1) >= count($supplements)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>
@@ -100,12 +147,12 @@
             $i = 0;
             foreach ($boissons as $boisson) {
         ?>
-            <?php if ($i === 0 or $i % 3 === 0) { ?>
+            <?php if ($i === 0 or $i % 2 === 0) { ?>
                 <div class="row">
             <?php } ?>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="panel panel-default">
-                        <div class="panel-body" style='min-height:90px'>
+                        <div class="panel-body" style='min-height:80px'>
                             <i><?php echo htmlentities($boisson['content']); ?></i>
                         </div>
                         <div class="panel-footer text-right">
@@ -113,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($boissons)) { ?>
+            <?php if (($i + 1) % 2 === 0 or ($i + 1) >= count($boissons)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>

@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <button class="btn btn-primary btn-lg" onClick="javascript:enterFullscreen('carousel')">
+                <button class="btn btn-primary col-md-12" onClick="javascript:enterFullscreen('carousel')">
                     Voir les photos en plein ecran  <i class="fa fa-expand"></i>
                 </button>
             </div>

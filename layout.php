@@ -38,11 +38,38 @@
         <?php echo $this->get('content'); ?>
 
     </div>
-    <div  class="footer text-center">
+    <div class="footer">
         <div class="container">
-            <i class="glyphicon glyphicon-time"></i> Ouvert tous les jours de 18h &agrave; 22h &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-            <i class="glyphicon glyphicon-earphone"></i> 010 / 65 60 78 &nbsp;&nbsp;&mdash;&nbsp;&nbsp;
-            <i class="glyphicon glyphicon-map-marker"></i> Route Provinciale 15 - 1450 Blanmont
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-md-4">
+                <i class="glyphicon glyphicon-time"></i></span> Ouvert tous les jours de 18h &agrave; 22h
+            </div>
+            <div class="col-md-4">
+                <i class="glyphicon glyphicon-earphone"></i>  010/65.60.78 - 0497/39.33.97
+            </div>
+            <div class="col-md-4 text-right">
+                <i class="glyphicon glyphicon-map-marker"></i> Route Provinciale 15 - 1450 Chastre
+            </div>
+        </div>
+        <div class="row visible-sm">
+            <div class="col-sm-6">
+                <i class="glyphicon glyphicon-earphone"></i>  010/65.60.78 - 0497/39.33.97
+            </div>
+            <div class="col-sm-6 text-right">
+                <i class="glyphicon glyphicon-map-marker"></i> Route Provinciale 15 - 1450 Chastre
+            </div>
+        </div>
+        <div class="visible-xs">
+            <div class="margin-bottom-md">
+                <i class="glyphicon glyphicon-time"></i></span> Ouvert tous les jours de 18h &agrave; 22h
+            </div>
+            <div class="margin-bottom-md">
+                <i class="glyphicon glyphicon-earphone"></i>  010/65.60.78 - 0497/39.33.97
+            </div>
+            <div>
+                <i class="glyphicon glyphicon-map-marker"></i> Route Provinciale 15 - 1450 Chastre
+            </div>
+        </div>
         </div>
     </div>
 
