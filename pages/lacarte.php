@@ -16,20 +16,23 @@
     $this->set('title', 'Pizzeria Fabrizio - La carte');
 ?>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
         <div class="btn-group margin-bottom-md" data-toggle="buttons" style="width:100%">
-            <label class="btn btn-default active" style="width:30%" data-id="pizzas">
-                <input type="radio" name="options" id="option1"> <i class="glyphicon glyphicon-align-justify"></i> Pizzas
+            <label class="btn btn-default active" style="width:25%" data-id="pizzas">
+                <input type="radio" name="options" id="option1"> <i class="fa fa-cutlery"></i> Pizzas
             </label>
-            <label class="btn btn-default" style="width:40%" data-id="supplements">
-                <input type="radio" name="options" id="option2"> <i class="glyphicon glyphicon-plus"></i> Suppl&eacute;ments
+            <label class="btn btn-default" style="width:25%" data-id="supplements">
+                <input type="radio" name="options" id="option2"> <i class="fa fa-plus"></i> Suppl&eacute;ments
             </label>
-            <label class="btn btn-default" style="width:30%" data-id="boissons">
-                <input type="radio" name="options" id="option3"> <i class="glyphicon glyphicon-glass"></i> Boissons
+            <label class="btn btn-default" style="width:25%" data-id="boissons">
+                <input type="radio" name="options" id="option3"> <i class="fa fa-glass"></i> Boissons
+            </label>
+            <label class="btn btn-default" style="width:25%" data-id="desserts">
+                <input type="radio" name="options" id="option2"> <i class="fa fa-spoon"></i> Desserts
             </label>
         </div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
         <div class="search input-group margin-bottom-md">
             <input type="text" class="form-control" placeholder="Rechercher une pizza">
             <div class="input-group-btn">
@@ -57,14 +60,7 @@
                         </div>
                         <div class="panel-footer text-right">
                             <span class="label label-success">
-                                <?php
-                                    $discount = 1;
-
-                                    if (strpos($pizza['title'], 'Nutella') === 0) {
-                                        $discount = 0;
-                                    }
-
-                                    echo number_format(($pizza['price'] - $discount), 2, ',', ''); ?> &euro;
+                                <?php echo number_format(($pizza['price'] - 1), 2, ',', ''); ?> &euro;
                             </span>
                             &nbsp;
                             <span class="label label-primary"><?php echo number_format($pizza['price'], 2, ',', ''); ?> &euro;</span>
@@ -96,12 +92,7 @@
                 </div>
                 <div class="panel-footer text-right">
                     <span class="label label-success">
-                        <?php
-                            $discount = 1;
-                            if (strpos($pizza['title'], 'Nutella') === 0) {
-                                $discount = 0;
-                            }
-                            echo number_format(($pizza['price'] - $discount), 2, ',', ''); ?> &euro;
+                        <?php echo number_format(($pizza['price'] - 1), 2, ',', ''); ?> &euro;
                     </span>
                     &nbsp;
                     <span class="label label-primary"><?php echo number_format($pizza['price'], 2, ',', ''); ?> &euro;</span>
@@ -124,12 +115,12 @@
             $i = 0;
             foreach ($supplements as $suplement) {
         ?>
-            <?php if ($i === 0 or $i % 2 === 0) { ?>
+            <?php if ($i === 0 or $i % 3 === 0) { ?>
                 <div class="row">
             <?php } ?>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="panel panel-default">
-                        <div class="panel-body" style='min-height:100px'>
+                        <div class="panel-body" style='min-height:135px'>
                             <i><?php echo htmlentities($suplement['content']); ?></i>
                         </div>
                         <div class="panel-footer text-right">
@@ -137,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-            <?php if (($i + 1) % 2 === 0 or ($i + 1) >= count($supplements)) { ?>
+            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($supplements)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>
@@ -161,6 +152,29 @@
                     </div>
                 </div>
             <?php if (($i + 1) % 2 === 0 or ($i + 1) >= count($boissons)) { ?>
+                </div>
+            <?php } ?>
+        <?php $i++; } ?>
+    </div>
+    <div id="desserts" class="hide">
+        <?php
+            $i = 0;
+            foreach ($desserts as $dessert) {
+        ?>
+            <?php if ($i === 0 or $i % 3 === 0) { ?>
+                <div class="row">
+            <?php } ?>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-body" style='min-height:80px'>
+                            <i><?php echo htmlentities($dessert['content']); ?></i>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <span class="label label-primary"><?php echo number_format($dessert['price'], 2, ',', ''); ?> &euro;</span>
+                        </div>
+                    </div>
+                </div>
+            <?php if (($i + 1) % 3 === 0 or ($i + 1) >= count($boissons)) { ?>
                 </div>
             <?php } ?>
         <?php $i++; } ?>
