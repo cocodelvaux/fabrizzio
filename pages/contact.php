@@ -39,6 +39,9 @@
                     <li class="list-group-item">
                         <span class="label label-default"><i class="glyphicon glyphicon-envelope"></i></span> info@chastrepizza.be
                     </li>
+                    <li class="list-group-item">
+                        <span class="label label-default"><i class="glyphicon glyphicon-credit-card"></i></span> Bancontact et Mister Cash
+                    </li>
                 </ul>
         </div>
     </div>
@@ -48,7 +51,7 @@
                Carte d'acc&egrave;s
             </div>
             <div class="panel-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10125.203395128014!2d4.645868741784458!3d50.62152777930204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17f18859dd615%3A0xe3638981695c830a!2sRoute+Provinciale+15!5e0!3m2!1sfr!2sbe!4v1400442790303" width="100%" height="300" frameborder="0" style="border:0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10125.203395128014!2d4.645868741784458!3d50.62152777930204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c17f18859dd615%3A0xe3638981695c830a!2sRoute+Provinciale+15!5e0!3m2!1sfr!2sbe!4v1400442790303" width="100%" height="339" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
     </div>
