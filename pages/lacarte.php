@@ -15,7 +15,12 @@
     $this->add('javascript', '<script src="' . $this->path('js/lacarte.js') . '"></script>');
     $this->set('title', 'Pizzeria Fabrizio - La carte');
 ?>
-<div class="row">
+<!--[if lt IE 8]>
+<div class="alert alert-danger" role="alert">
+    Vous utilisez une ancienne version d'<b>Internet Explorer</b>, pour visualiser notre site internet correctement veuillez mettre &agrave; jour votre navigateur.
+</div>
+<![endif]-->
+<div class="row" id='controls'>
     <div class="col-md-8">
         <div class="btn-group margin-bottom-md" data-toggle="buttons" style="width:100%">
             <label class="btn btn-default active" style="width:25%" data-id="pizzas">
@@ -71,7 +76,7 @@
                 </div>
             <?php } ?>
         <?php $i++; } ?>
-        <div class="panel penel-default">
+        <div class="panel panel-default">
             <div class="panel-body text-center">
                 <span class="label label-success">Prix &agrave; emporter</span>
                 <span class="label label-primary">Prix &agrave; manger sur place</span>
@@ -99,7 +104,7 @@
                 </div>
             </div>
         <?php $i++; } ?>
-        <div class="panel penel-default">
+        <div class="panel panel-default">
             <div class="panel-body">
                 <button class="show-all btn btn-primary">Afficher tout les pizzas</button>
                 <div class="pull-right">
@@ -180,3 +185,15 @@
         <?php $i++; } ?>
     </div>
 </div>
+<!--[if lt IE 8]>
+<script>
+    function removeElement(node) {
+        if (node !== undefined) {
+            node.parentNode.removeChild(node);
+        }
+    }
+
+    removeElement(document.getElementById('navbar'));
+    removeElement(document.getElementById('controls'));
+</script>
+<![endif]-->

@@ -1,5 +1,13 @@
 <?php
     $this->set('title', 'Pizzeria Fabrizio - Accueil');
+    $this->add(
+        'javascript-header',
+        '<!--[if lt IE 8]>
+            <script>
+                document.location.href = "' . $this->path('lacarte') . '"
+            </script>
+        <![endif]-->'
+    );
 ?>
 <div class="panel panel-default">
     <div class="panel-heading">

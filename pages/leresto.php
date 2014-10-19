@@ -1,6 +1,14 @@
 <?php
     $this->set('title', 'Pizzeria Fabrizio - Le restaurant');
     $this->add(
+        'javascript-header',
+        '<!--[if lt IE 8]>
+            <script>
+                document.location.href = "' . $this->path('lacarte') . '"
+            </script>
+        <![endif]-->'
+    );
+    $this->add(
         'stylesheet',
         '<style>
             body {

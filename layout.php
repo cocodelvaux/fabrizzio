@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="utf-8">
@@ -11,10 +11,17 @@
     <link href="<?php echo $this->path('css/font-awesome.min.css'); ?>" rel="stylesheet" >
     <?php echo $this->get('stylesheet'); ?>
     <?php echo $this->get('javascript-header'); ?>
+    <!--[if lt IE 9]>
+        <script src="<?php echo $this->path('js/pie.js'); ?>"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+        <script src="<?php echo $this->path('js/html5shiv.min.js'); ?>"></script>
+        <script src="<?php echo $this->path('js/respond.min.js'); ?>"></script>
+    <![endif]-->
 </head>
 <body>
     <div class="container wrap">
-        <div class="navbar navbar-default" role="navigation">
+        <div class="navbar navbar-default" role="navigation" id="navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header">
                     <span class="sr-only">Toggle navigation</span>
@@ -72,10 +79,31 @@
         </div>
         </div>
     </div>
-
-    <script src="<?php echo $this->path('js/jquery-2.1.1.min.js'); ?>"></script>
+    <script src="<?php echo $this->path('js/jquery.min.js'); ?>"></script>
     <script src="<?php echo $this->path('js/bootstrap.min.js'); ?>"></script>
     <script src="<?php echo $this->path('js/scripts.js'); ?>"></script>
+    <script>
+        $(function() {
+            if (window.PIE) {
+                $('.navbar.navbar-default').each(function() {
+                    PIE.attach(this);
+                });
+
+                $('.footer, .panel-default .panel-body, .panel-default .list-group .list-group-item')
+                .css('background-color', '#fff')
+                .each(function () {
+                    this.style.filter = 'alpha(opacity=90)';
+                });
+                $('.panel-default .panel-heading, .panel-default .panel-footer').css('background-color', '#DDD')
+                .each(function () {
+                    this.style.filter = 'alpha(opacity=90)';
+                });
+                $('.carousel-indicators li').each(function () {
+                    this.style.filter = 'alpha(opacity=50)';
+                });
+            }
+        });
+    </script>
     <?php echo $this->get('javascript'); ?>
 </body>
 </html>
